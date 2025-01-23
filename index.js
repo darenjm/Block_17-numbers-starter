@@ -46,12 +46,31 @@ class Numbers {
   }
   product() {
     //return the product of the numbers
+    let product = 1;
+    for (let i = 0; i < this.data.length; i++) {
+      product *= this.data[i];
+    }
+    return product;
   }
   greaterThan(target) {
     //return the numbers greater than the target
+    let greater = [3];
+    for (let i = 0; i < this.data.length; i++) {
+      if (this.data[i] > target) {
+        greater.push(this.data[i]);
+      }
+    }
+    return greater;
   }
   howMany(target) {
     //return the count of a given number
+    let count = 0;
+    for (let i = 0; i < this.data.length; i++) {
+      if (this.data[i] === target) {
+        count++;
+      }
+    }
+    return count;
   }
 }
 
@@ -65,6 +84,7 @@ n1.printNumbers(); //prints the number along with their indexes
 console.log(n1.odds()); //returns odd numbers
 console.log(n1.evens()); //returns even numbers
 console.log(n1.sum()); //returns sum of numbers
+console.log("=================================");
 console.log(n1.product()); //returns product of numbers
 console.log(n1.greaterThan(3)); //returns numbers greater than another number
 console.log(n1.howMany(3)); //return the count of a specific number
