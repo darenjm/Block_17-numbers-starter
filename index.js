@@ -22,20 +22,26 @@ class Numbers {
   }
   odds() {
     //return the odd numbers in data
+    let odds = [];
     for (let i = 0; i < this.data.length; i++) {
       if (this.data[i] % 2 !== 0) {
-        console.log(`Index: ${i}, Number: ${this.data[i]}`);
+        odds.push(this.data[i]);
       }
     }
+    return odds;
   }
+
   evens() {
     //return the even numbers in data
+    let evens = [];
     for (let i = 0; i < this.data.length; i++) {
-      if (this.data[i] % 2 !== 0) {
-        console.log(`Index: ${i}, Number: ${this.data[i]}`);
+      if (this.data[i] % 2 === 0) {
+        evens.push(this.data[i]);
       }
     }
+    return evens;
   }
+
   sum() {
     //return the sum of the numbers
     let sum = 0;
