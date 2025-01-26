@@ -60,7 +60,7 @@ class Numbers {
   }
   greaterThan(target) {
     //return the numbers greater than the target
-    let greater = [3];
+    let greater = [];
     for (let i = 0; i < this.data.length; i++) {
       if (this.data[i] > target) {
         greater.push(this.data[i]);
