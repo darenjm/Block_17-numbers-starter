@@ -88,10 +88,13 @@ const n1 = new Numbers(str);
 console.log(n1.count()); //returns count of numbers
 n1.printNumbers(); //prints the number along with their indexes
 console.log(n1.odds()); //returns odd numbers
+console.log("============= ^^^ odds ^^^ ====================");
 console.log(n1.evens()); //returns even numbers
+console.log("============= ^^^ evens ^^^ ====================");
 console.log(n1.sum()); //returns sum of numbers
 console.log("=================================");
 console.log(n1.product()); //returns product of numbers
-console.log(n1.greaterThan(3)); //returns numbers greater than another number
+console.log(n1.greaterThan(8)); //returns numbers greater than another number
+console.log("============= ^^^ greater than ^^^ ====================");
 console.log(n1.howMany(3)); //return the count of a specific number
 console.log("hello", this.data);
